@@ -94,10 +94,10 @@ export default function OnboardingPage() {
           <div className="flex flex-col items-center gap-6 page-enter">
             <div className="relative">
               <div className="w-24 h-24 rounded-3xl bg-dark-card border border-dark-border flex items-center justify-center text-5xl">
-                \u{1F3C3}
+                {'\u{1F3C3}'}
               </div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-primary flex items-center justify-center text-sm font-bold text-dark">
-                \u26A1
+                {'\u26A1'}
               </div>
             </div>
             <div className="text-center">
@@ -108,21 +108,21 @@ export default function OnboardingPage() {
             </div>
             <div className="w-full glass rounded-2xl p-4 flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <span className="text-xl">\u{1F512}</span>
+                <span className="text-xl">{'\u{1F512}'}</span>
                 <div>
                   <p className="text-sm font-semibold text-white">완전한 자기 보관</p>
                   <p className="text-xs text-white/40">개인키는 기기에만 저장, 서버 없음</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-xl">\u{1F4CD}</span>
+                <span className="text-xl">{'\u{1F4CD}'}</span>
                 <div>
                   <p className="text-sm font-semibold text-white">GPS 기반 검증</p>
                   <p className="text-xs text-white/40">실시간 달리기 추적 & 사기 감지</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <span className="text-xl">\u{1F3C6}</span>
+                <span className="text-xl">{'\u{1F3C6}'}</span>
                 <div>
                   <p className="text-sm font-semibold text-white">자동 상금 분배</p>
                   <p className="text-xs text-white/40">스마트 컨트랙트가 즉시 처리</p>
@@ -171,7 +171,7 @@ export default function OnboardingPage() {
             ) : (
               <div className="flex flex-col gap-4">
                 <div className="glass rounded-2xl p-4 border border-accent-gold/20">
-                  <p className="text-accent-gold text-sm font-semibold mb-2">\u26A0\uFE0F 중요 안내</p>
+                  <p className="text-accent-gold text-sm font-semibold mb-2">{'\u26A0\uFE0F'} 중요 안내</p>
                   <p className="text-white/60 text-xs leading-relaxed">
                     다음 화면에서 12개의 니모닉(복구 구문)이 표시됩니다. 이를 안전한 곳에 반드시 기록하세요. 분실 시 지갑을 복구할 수 없습니다.
                   </p>
@@ -279,7 +279,7 @@ export default function OnboardingPage() {
         {step === 'done' && (
           <div className="flex flex-col items-center gap-6 page-enter">
             <div className="w-24 h-24 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center text-5xl glow-green">
-              \u2713
+              {'\u2713'}
             </div>
             <div className="text-center">
               <h2 className="text-2xl font-black text-white">설정 완료!</h2>
