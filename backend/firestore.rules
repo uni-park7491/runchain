@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 채린지 정보: 누구나 읽기 가능, 서버만 쓰기 가능
+    match /challenges/{challengeId} {
+      allow read: if true;
+      allow write: if false; // 서버(Cloud Functions)만 쓰기
+
+      // 기록: 서버만 쓰기
+      match /records/{recordId} {
+        allow read: if true;
+        allow write: if false;
+      }
+    }
+    // 유저 프로파일: 본인만 읽기/쓰기
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
