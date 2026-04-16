@@ -1,0 +1,23 @@
+{
+  "name": "RunChain",
+  "short_name": "RunChain",
+  "description": "BNB Chain Weekly Running Challenge \u2014 Run to Earn",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#00FF87",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "finance"],
+  "shortcuts": [
+    { "name": "Dashboard", "url": "/home" },
+    { "name": "Challenges", "url": "/challenges" }
+  ]
+}
