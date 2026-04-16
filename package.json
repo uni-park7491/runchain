@@ -2,7 +2,7 @@
   "name": "runchain",
   "version": "1.0.0",
   "private": true,
-tml  "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
