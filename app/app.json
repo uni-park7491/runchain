@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "RunChain",
+    "slug": "runchain",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D0D0D"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.runchain.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "러닝 거리 측정을 위해 위치 정보가 필요합니다.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "러닝 중 백그라운드 GPS 추적을 위해 위치 정보가 필요합니다.",
+        "NSFaceIDUsageDescription": "지갑 접근 및 결제 보안을 위해 Face ID가 필요합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.runchain.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "러닝 GPS 추적을 위해 위치 정보를 사용합니다."
+        }
+      ],
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "scheme": "runchain",
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
