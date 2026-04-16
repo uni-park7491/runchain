@@ -16,7 +16,9 @@
     "zustand": "^5.0.0",
     "date-fns": "^4.1.0",
     "axios": "^1.7.0",
-    "crypto-js": "^4.2.0"
+    "crypto-js": "^4.2.0",
+    "openai": "^4.47.0",
+    "framer-motion": "^11.3.0"
   },
   "devDependencies": {
     "typescript": "^5",
