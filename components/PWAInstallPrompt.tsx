@@ -42,11 +42,11 @@ export default function PWAInstallPrompt() {
       <div className="glass rounded-2xl p-4 border border-primary/30 glow-green">
         <div className="flex items-start gap-3">
           <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-xl flex-shrink-0">
-            \u{1F4F2}
+            {'\u{1F4F2}'}
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-bold text-white">RunChain 앱 설치</p>
-            <p className="text-xs text-white/50 mt-0.5">홈 화면에 추가해서 앱처럼 사용하세요</p>
+            <p className="text-sm font-bold text-white">RunChain \uc571 \uc124\uce58</p>
+            <p className="text-xs text-white/50 mt-0.5">\ud648 \ud654\uba74\uc5d0 \ucd94\uac00\ud574\uc11c \uc571\ucc98\ub7fc \uc0ac\uc6a9\ud558\uc138\uc694</p>
           </div>
           <button onClick={handleDismiss} className="text-white/30 hover:text-white/60 transition-colors p-1">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -56,10 +56,10 @@ export default function PWAInstallPrompt() {
         </div>
         <div className="flex gap-2 mt-3">
           <button onClick={handleDismiss} className="flex-1 py-2 text-sm font-semibold text-white/40 hover:text-white/60 transition-colors">
-            나중에
+            \ub098\uc911\uc5d0
           </button>
           <button onClick={handleInstall} className="flex-1 py-2 btn-primary text-sm">
-            설치하기
+            \uc124\uce58\ud558\uae30
           </button>
         </div>
       </div>
